@@ -37,7 +37,7 @@ const SearchUser = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-          <h2 className="text-center m-4">Search Product</h2>
+          <h2 className="text-center m-4">Search Clients</h2>
           <form onSubmit={onSearch}>
             <div className="mb-3">
               <label htmlFor="ID" className="form-label">

@@ -11,7 +11,7 @@ export const Navbar = () => {
       <span className="navbar-toggler-icon"></span>
     </button>
 
-    <Link className="btn btn-outline-light" to="/adduser">Add User</Link>
+   {/*  <Link className="btn btn-outline-light" to="/adduser">Add User</Link>
     <Link className="btn btn-outline-light" to="/addprod">Add Product</Link>
     <Link className="btn btn-outline-light" to="/addord">Add Order</Link>
     <Link className="btn btn-outline-light" to="/ord">Order</Link>
@@ -19,6 +19,7 @@ export const Navbar = () => {
     <Link className="btn btn-outline-light" to="/clients">Users</Link>
     <Link className="btn btn-outline-light" to="/searchProd">Search Product</Link>
     <Link className="btn btn-outline-light" to="/searchUser">Search User</Link>
+    <Link className="btn btn-outline-light" to="/searchOrder">Search Order</Link> */}
     <Link className="btn btn-outline-light" to="/">LogIn / Sign Up</Link>
   </div>
 </nav>

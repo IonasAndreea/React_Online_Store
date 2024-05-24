@@ -7,9 +7,11 @@ const SearchOrd = () => {
   const [idOrder, setIdOrder] = useState('');
   const [ord, setOrder] = useState({
     orderDate: "",
+    client: {},
+    product: []
   });
 
-  const {orderDate } = ord;
+  const { orderDate, client, product } = ord;
 
   const onInputChange = (e) => {
     setIdOrder(e.target.value);
@@ -24,7 +26,9 @@ const SearchOrd = () => {
       console.error("Error searching for order:", error);
       
       setOrder({
-        orderDate:""
+        orderDate: "",
+        client: {},
+        product: []
       });
     }
   };
@@ -52,7 +56,13 @@ const SearchOrd = () => {
           <div className="mt-4">
             {orderDate && (
               <div>
-                <h3>{orderDate}</h3>
+                <h3>Order Date: {orderDate}</h3>
+                <h4>Client ID: {client?.id}</h4>
+                <h5>Product IDs: {product?.map((prod, index) => (
+                  <span key={index}>
+                    {prod.idProduct}{index < product.length - 1 ? ', ' : ''}
+                  </span>
+                ))}</h5>
               </div>
             )}
           </div>

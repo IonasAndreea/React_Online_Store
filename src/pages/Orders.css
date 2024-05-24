@@ -1,0 +1,18 @@
+.containerOrders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+  }
+  
+  .centerOrders {
+    margin-bottom: 10px; 
+  }
+  
+  .btn-Orders {
+    font-size: 20px; 
+    padding: 15px 30px; 
+    margin: 10px;
+  }
+  
