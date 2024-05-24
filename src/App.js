@@ -9,10 +9,14 @@ import { EditUser } from './users/EditUser';
 import {HomeProd }from "./pages/HomeProd";
 import { AddProduct } from './products/AddProduct';
 import { EditProduct } from './products/EditProduct';
+import SearchProduct, { products } from './products/SearchProduct';
 import StartPg, { StartPage } from './StartPage/StartPg';
 import { HomeOrd } from './pages/HomeOrd';
 import { EditOrder } from './orders/EditOrder';
 import { AddOrder } from './orders/AddOrder';
+import SearchUser, {users} from './users/SearchUser';
+
+
 
 function App() {
   return (
@@ -31,6 +35,8 @@ function App() {
         <Route exact path= "/editprod/:idProduct" element ={<EditProduct/>}/>
         <Route exact path= "/editorder/:idOrder" element ={<EditOrder/>}/>
         <Route exact path= "/start" element ={<StartPg/>}/>
+        <Route exact path= "/searchProd" element = {<SearchProduct/>}/>
+        <Route exact path= "/searchUser" element = {<SearchUser/>}/>
       </Routes>
       </Router>
      

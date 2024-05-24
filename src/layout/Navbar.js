@@ -17,6 +17,8 @@ export const Navbar = () => {
     <Link className="btn btn-outline-light" to="/ord">Order</Link>
     <Link className="btn btn-outline-light" to="/prod">Products</Link>
     <Link className="btn btn-outline-light" to="/clients">Users</Link>
+    <Link className="btn btn-outline-light" to="/searchProd">Search Product</Link>
+    <Link className="btn btn-outline-light" to="/searchUser">Search User</Link>
     <Link className="btn btn-outline-light" to="/">LogIn / Sign Up</Link>
   </div>
 </nav>
