@@ -15,6 +15,7 @@ import { HomeOrd } from './pages/HomeOrd';
 import { EditOrder } from './orders/EditOrder';
 import { AddOrder } from './orders/AddOrder';
 import SearchUser, {users} from './users/SearchUser';
+import SearchOrd, {orders} from './orders/SearchOrd';
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route exact path= "/start" element ={<StartPg/>}/>
         <Route exact path= "/searchProd" element = {<SearchProduct/>}/>
         <Route exact path= "/searchUser" element = {<SearchUser/>}/>
+        <Route exact path= "/searchOrder" element = {<SearchOrd/>}/>
       </Routes>
       </Router>
      
