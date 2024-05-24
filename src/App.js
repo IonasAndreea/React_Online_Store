@@ -23,7 +23,7 @@ function App() {
         <Route export path="/clients" element={<Home/>}/>
         <Route export path="/ord" element={<HomeOrd/>}/>
         <Route export path="/prod" element={<HomeProd/>}/>
-        <Route exact path="/login-signup" element={<LogInSignUp/>}/>
+        <Route exact path="/" element={<LogInSignUp/>}/>
         <Route exact path="/adduser" element={<AddUser/>}></Route>
         <Route exact path="/addprod" element={<AddProduct/>}></Route>
         <Route exact path="/addord" element={<AddOrder/>}></Route>
