@@ -35,6 +35,9 @@ export const HomeProd = () => {
     <div className='container'>
         <div className='py-4'>
         <h1>PRODUCTS:</h1>
+        <Link className="btn btn-outline-danger mx-2"
+                  to={`/ProductsOptions`}>
+                  Back</Link>
         <table class="table border shadow"> 
   <thead>
     <tr>

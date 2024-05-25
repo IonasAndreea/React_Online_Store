@@ -13,6 +13,11 @@ const Products = () => {
       </div>
       <div className="center">
         <Link className="btn btn-Products btn-outline-light" to="/searchProd">SEARCH PRODUCT</Link>
+        </div>
+        <div>
+        <Link className="btn btn-Products btn-outline-danger mx-2"
+                  to={`/start`}>
+                  Back</Link>
       </div>
     </div>
   );

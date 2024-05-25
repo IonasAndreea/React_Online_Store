@@ -14,6 +14,9 @@ const Clients = () => {
       <div className="center">
         <Link className="btn btn-client btn-outline-light" to="/searchUser">SEARCH CLIENT</Link>
       </div>
+      <Link className="btn btn-client btn-outline-danger mx-2"
+                  to={`/start`}>
+                  Back</Link>
     </div>
   );
 };

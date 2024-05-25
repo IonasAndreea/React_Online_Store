@@ -35,6 +35,9 @@ export const HomeOrd = () => {
     <div className='container'>
         <div className='py-4'>
         <h1>ORDERS:</h1>
+        <Link className="btn btn-outline-danger mx-2"
+                  to={`/OrderOptions`}>
+                  Back</Link>
         <table class="table border shadow"> 
   <thead>
     <tr>

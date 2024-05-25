@@ -34,6 +34,9 @@ export const Home = () => {
     <div className='container'>
         <div className='py-4'>
         <h1>CLIENTS:</h1>
+        <Link className="btn btn-outline-danger mx-2"
+                  to={`/ClientsOptions`}>
+                  Back</Link>
         <table class="table border shadow"> 
   <thead>
     <tr>
@@ -71,6 +74,7 @@ export const Home = () => {
     
   </tbody>
 </table>
+
 
         </div>
     </div>

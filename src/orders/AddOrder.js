@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const AddOrder = () => {
     let navigate = useNavigate();
@@ -116,7 +116,7 @@ export const AddOrder = () => {
                             </select>
                         </div>
                         <button type="submit" className="btn btn-outline-primary">Submit</button>
-                        <button type="button" className="btn btn-outline-danger mx-2" onClick={() => navigate("/orders")}>Cancel</button>
+                        <Link className="btn btn-outline-danger mx-2" to={`/OrderOptions`}>Cancel</Link>
                     </form>
                 </div>
             </div>

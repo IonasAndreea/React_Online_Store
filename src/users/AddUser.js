@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, {useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const AddUser = () => {
 
@@ -23,7 +23,7 @@ export const AddUser = () => {
     const onSubmit=async(e) => {
         e.preventDefault();
         await axios.post("http://localhost:8081/clients/insertClient", user)
-        navigate("/")
+        navigate("/ClientsOptions")
 
     };
   return (
@@ -81,7 +81,9 @@ export const AddUser = () => {
                 onChange={(e) => onInputChange(e)}/>
         </div>
         <button type = "submit" className="btn btn-outline-primary">Submit</button>
-        <button type = "submit" className="btn btn-outline-danger mx-2">Cancel</button>
+        <Link className="btn btn-outline-danger mx-2"
+                  to={`/ClientsOptions`}>
+                  Cancel</Link>
         </form>
     </div>
     </div>

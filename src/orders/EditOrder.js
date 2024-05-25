@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export const EditOrder = () => {
 
@@ -116,7 +116,7 @@ export const EditOrder = () => {
                             </div>
                         ))}
                         <button type="submit" className="btn btn-outline-primary">Submit</button>
-                        <button type="button" className="btn btn-outline-danger mx-2" onClick={() => navigate("/ord")}>Cancel</button>
+                        <Link className="btn btn-outline-danger mx-2" to={`/ord`}>Back</Link>
                     </form>
                 </div>
             </div>

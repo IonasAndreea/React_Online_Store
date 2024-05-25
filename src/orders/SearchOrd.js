@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SearchOrd = () => {
   const navigate = useNavigate();
@@ -52,6 +52,7 @@ const SearchOrd = () => {
               />
             </div>
             <button type="submit" className="btn btn-outline-primary">Search</button>
+            <Link className="btn btn-outline-danger mx-2" to={`/OrderOptions`}>Cancel</Link>
           </form>
           <div className="mt-4">
             {orderDate && (

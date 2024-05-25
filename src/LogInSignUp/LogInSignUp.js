@@ -21,6 +21,7 @@ export const LogInSignUp = () => {
                 address: address
             });
             alert("Client Registration Successfully");
+            navigate('/start');
             setUserNane("");
             setEmail("");
             setPassword("");

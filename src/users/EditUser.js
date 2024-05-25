@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, {useEffect, useState} from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export const EditUser = () => {
 
@@ -124,7 +124,9 @@ export const EditUser = () => {
                 onChange={(e) => onInputChange(e)}/>
         </div>
         <button type = "submit" className="btn btn-outline-primary">Submit</button>
-        <button type = "submit" className="btn btn-outline-danger mx-2">Cancel</button>
+        <Link className="btn btn-outline-danger mx-2"
+                  to={`/clients`}>
+                  Cancel</Link>
         </form>
     </div>
     </div>

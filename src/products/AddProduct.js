@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, {useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const AddProduct = () => {
 
@@ -81,7 +81,9 @@ export const AddProduct = () => {
                 onChange={(e) => onInputChange(e)}/>
         </div>
         <button type = "submit" className="btn btn-outline-primary">Submit</button>
-        <button type = "submit" className="btn btn-outline-danger mx-2">Cancel</button>
+        <Link className="btn btn-outline-danger mx-2"
+                  to={`/ProductsOptions`}>
+                  Cancel</Link>
         </form>
     </div>
     </div>
