@@ -35,7 +35,7 @@ export const AddOrder = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
         await axios.post("http://localhost:8081/oredrs/insertOrder", order);
-        navigate("/orders");
+        navigate("/OrderOptions");
     };
 
     return (

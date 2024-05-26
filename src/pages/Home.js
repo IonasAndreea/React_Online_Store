@@ -45,7 +45,6 @@ export const Home = () => {
       <th scope="col">Email</th>
       <th scope="col">Password</th>
       <th scope="col">Address</th>
-      <th scope="col">Admin</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -58,7 +57,6 @@ export const Home = () => {
             <td>{users.email}</td>
             <td>{users.password}</td>
             <td>{users.address}</td>
-            <td>{users.isAdmin ? 'Yes' : 'No'}</td> 
             <td>
                 <Link className="btn btn-outline-primary mx-2"
                   to={`/edituser/${users.id}`}>
